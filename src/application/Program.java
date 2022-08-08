@@ -1,0 +1,57 @@
+package application;
+
+import java.util.Scanner;
+
+import dominio.Bootcamp;
+import dominio.Curso;
+import dominio.Dev;
+import dominio.Mentoria;
+
+public class Program {
+
+	public static void main(String[] args) {
+		 Scanner sc = new Scanner(System.in);
+		 
+		 Curso curso1 = new Curso();
+		 curso1.setTitulo("curso de Java");
+		 curso1.setDescricao("descrição curso de java");
+		 curso1.setCargaHoraria(8);
+		 
+		 Curso curso2 = new Curso();
+		 curso2.setTitulo("curso de js");
+		 curso2.setDescricao("descrição curso de js");
+		 curso2.setCargaHoraria(4);
+		 
+		 Mentoria mentoria1 = new Mentoria();
+		 mentoria1.setTitulo("curso de js");
+		 mentoria1.setDescricao("descrição curso de js");
+		 mentoria1.setData(4);
+		 
+//		 System.out.println(curso1);
+//		 System.out.println(curso2);
+//		 System.out.println(mentoria1); 
+		 
+		 Bootcamp bootcamp = new Bootcamp();
+		 bootcamp.setNome("Bootcamp Spring Boot");
+		 bootcamp.setDescricao("Aprenda Spring Boot do básico ao avançado");
+		 bootcamp.getConteudos().add(curso1);
+		 bootcamp.getConteudos().add(curso2);
+		 bootcamp.getConteudos().add(mentoria1);
+		 
+		 Dev devSergio = new Dev();
+		 devSergio.setNome("Sergio");
+		 devSergio.inscreverBootcamp(bootcamp);
+		 System.out.println("Conteúdos Inscritos Sergio:" + devSergio.getConteudosInscritos());
+		 devSergio.progredir();
+		 System.out.println("Conteúdos Concluídos Sergio:" + devSergio.getConteudosConcluidos());
+		 System.out.println("XP:" + devSergio.calcularTotalXp());
+		 
+		 Dev devCamila = new Dev();
+		 devCamila.setNome("Camila");
+		 devCamila.inscreverBootcamp(bootcamp);
+		 System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
+		 devCamila.progredir();
+		 System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
+
+	}
+}
