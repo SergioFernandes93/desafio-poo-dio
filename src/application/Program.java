@@ -46,6 +46,8 @@ public class Program {
 		 System.out.println("Conteúdos Concluídos Sergio:" + devSergio.getConteudosConcluidos());
 		 System.out.println("XP:" + devSergio.calcularTotalXp());
 		 
+		 System.out.println("-------------------------------------------------------------------------------");
+		 
 		 Dev devCamila = new Dev();
 		 devCamila.setNome("Camila");
 		 devCamila.inscreverBootcamp(bootcamp);
