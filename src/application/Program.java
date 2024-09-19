@@ -14,17 +14,17 @@ public class Program {
 		 
 		 Curso curso1 = new Curso();
 		 curso1.setTitulo("curso de Java");
-		 curso1.setDescricao("descrição curso de java");
+		 curso1.setDescricao("descriï¿½ï¿½o curso de java");
 		 curso1.setCargaHoraria(8);
 		 
 		 Curso curso2 = new Curso();
 		 curso2.setTitulo("curso de js");
-		 curso2.setDescricao("descrição curso de js");
+		 curso2.setDescricao("descriï¿½ï¿½o curso de js");
 		 curso2.setCargaHoraria(4);
 		 
 		 Mentoria mentoria1 = new Mentoria();
 		 mentoria1.setTitulo("curso de js");
-		 mentoria1.setDescricao("descrição curso de js");
+		 mentoria1.setDescricao("descriï¿½ï¿½o curso de js");
 		 mentoria1.setData(4);
 		 
 //		 System.out.println(curso1);
@@ -33,7 +33,7 @@ public class Program {
 		 
 		 Bootcamp bootcamp = new Bootcamp();
 		 bootcamp.setNome("Bootcamp Spring Boot");
-		 bootcamp.setDescricao("Aprenda Spring Boot do básico ao avançado");
+		 bootcamp.setDescricao("Aprenda Spring Boot do bï¿½sico ao avanï¿½ado");
 		 bootcamp.getConteudos().add(curso1);
 		 bootcamp.getConteudos().add(curso2);
 		 bootcamp.getConteudos().add(mentoria1);
@@ -41,9 +41,9 @@ public class Program {
 		 Dev devSergio = new Dev();
 		 devSergio.setNome("Sergio");
 		 devSergio.inscreverBootcamp(bootcamp);
-		 System.out.println("Conteúdos Inscritos Sergio:" + devSergio.getConteudosInscritos());
+		 System.out.println("Conteï¿½dos Inscritos Sergio:" + devSergio.getConteudosInscritos());
 		 devSergio.progredir();
-		 System.out.println("Conteúdos Concluídos Sergio:" + devSergio.getConteudosConcluidos());
+		 System.out.println("Conteï¿½dos Concluï¿½dos Sergio:" + devSergio.getConteudosConcluidos());
 		 System.out.println("XP:" + devSergio.calcularTotalXp());
 		 
 		 System.out.println("-------------------------------------------------------------------------------");
@@ -51,9 +51,9 @@ public class Program {
 		 Dev devCamila = new Dev();
 		 devCamila.setNome("Camila");
 		 devCamila.inscreverBootcamp(bootcamp);
-		 System.out.println("Conteúdos Inscritos Camila:" + devCamila.getConteudosInscritos());
+		 System.out.println("Conteï¿½dos Inscritos Camila:" + devCamila.getConteudosInscritos());
 		 devCamila.progredir();
-		 System.out.println("Conteúdos Concluídos Camila:" + devCamila.getConteudosConcluidos());
+		 System.out.println("Conteï¿½dos Concluï¿½dos Camila:" + devCamila.getConteudosConcluidos());
 
 	}
 }
